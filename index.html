@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>A Little Place For Dulce</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#FDF6F0">
+</head>
+<body>
+    <div class="texture-overlay"></div>
+    <div id="ambient-container"></div>
+
+    <!-- SCENE 1: THE LITTLE DOOR -->
+    <section id="scene-1" class="scene twilight-scene">
+        <div class="scene-content">
+            <div class="sky-elements">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="star-static top-left"></div>
+                <div class="star-static top-right"></div>
+            </div>
+            
+            <div class="miniature-house">
+                <svg viewBox="0 0 200 200" class="house-svg">
+                    <path d="M20 100 L100 30 L180 100" fill="none" stroke="#A07869" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="40" y="100" width="120" height="90" fill="#FDF6F0" rx="5"/>
+                    <rect x="80" y="130" width="40" height="60" fill="#D8A7B1" rx="5"/>
+                    <!-- Glowing window -->
+                    <rect x="55" y="120" width="20" height="30" fill="#F5E6CC" class="window-glow" rx="2"/>
+                    <rect x="125" y="120" width="20" height="30" fill="#F5E6CC" class="window-glow" rx="2"/>
+                </svg>
+                <div class="bear-outside">
+                    <!-- Cream Bear -->
+                    <svg viewBox="0 0 100 100" class="bear bear-cream breath-anim">
+                        <circle cx="30" cy="30" r="12" fill="#FDF6F0" stroke="#A07869" stroke-width="2"/>
+                        <circle cx="70" cy="30" r="12" fill="#FDF6F0" stroke="#A07869" stroke-width="2"/>
+                        <ellipse cx="50" cy="50" rx="35" ry="30" fill="#FDF6F0" stroke="#A07869" stroke-width="2"/>
+                        <circle cx="35" cy="45" r="3" fill="#A07869"/>
+                        <circle cx="65" cy="45" r="3" fill="#A07869"/>
+                        <ellipse cx="50" cy="55" rx="5" ry="3" fill="#D8A7B1"/>
+                        <rect x="35" y="65" width="30" height="25" rx="10" fill="#FDF6F0" stroke="#A07869" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="text-group">
+                <p class="fade-text">For Dulce.</p>
+                <p class="fade-text">I made a little place for you.</p>
+                <p class="fade-text">Not because everything has to be perfect.</p>
+                <p class="fade-text">Just because sometimes I have more feelings than words.</p>
+            </div>
+            
+            <a href="#scene-2" class="continue-btn primary-btn">ENTER MY LITTLE WORLD &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 2: FIRST, I OWE YOU AN APOLOGY -->
+    <section id="scene-2" class="scene cozy-room-scene">
+        <div class="scene-content">
+            <div class="desk-environment">
+                <svg viewBox="0 0 300 200" class="desk-svg">
+                    <rect x="20" y="140" width="260" height="15" fill="#A07869" rx="5"/>
+                    <rect x="40" y="155" width="15" height="45" fill="#A07869"/>
+                    <rect x="245" y="155" width="15" height="45" fill="#A07869"/>
+                    <path d="M60 140 L70 80 L110 80 L120 140 Z" fill="#F5E6CC" class="lamp-glow"/>
+                    <rect x="80" y="75" width="20" height="5" fill="#A07869"/>
+                    <rect x="88" y="40" width="4" height="35" fill="#A07869"/>
+                </svg>
+                <div class="bear-at-desk">
+                    <!-- Mocha Bear -->
+                    <svg viewBox="0 0 100 100" class="bear bear-mocha head-lift-anim">
+                        <circle cx="30" cy="30" r="12" fill="#A07869" stroke="#6b4c41" stroke-width="2"/>
+                        <circle cx="70" cy="30" r="12" fill="#A07869" stroke="#6b4c41" stroke-width="2"/>
+                        <ellipse cx="50" cy="50" rx="35" ry="30" fill="#A07869" stroke="#6b4c41" stroke-width="2"/>
+                        <circle cx="35" cy="55" r="3" fill="#FDF6F0"/>
+                        <circle cx="65" cy="55" r="3" fill="#FDF6F0"/>
+                        <ellipse cx="50" cy="62" rx="5" ry="3" fill="#6b4c41"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="letter-reveal">
+                <p class="fade-text">Dulce,<br>before anything else,<br>there’s something I want to say properly.</p>
+                <p class="fade-text">Today I was feeling really sick and frustrated,<br>and honestly, I wanted you with me badly.</p>
+                <p class="fade-text">When you had to leave for class,<br>I let that hurt turn into anger.</p>
+                <p class="fade-text">I said things that made it seem like<br>you weren’t there for me,<br>even though you were trying to be.</p>
+                <p class="fade-text">That wasn’t fair to you.</p>
+                <p class="fade-text emphasize">I’m sorry.</p>
+                <p class="fade-text">I don’t want my difficult moments<br>to become something you have to carry.</p>
+                <p class="fade-text">I’m learning to tell you when I need you<br>without making you feel guilty for having your own life.</p>
+                <p class="fade-text">I’m still learning.</p>
+                <p class="fade-text">But I mean it when I say<br>I want to do better.</p>
+            </div>
+
+            <a href="#scene-3" class="continue-btn">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 3: YOU WERE STILL THERE -->
+    <section id="scene-3" class="scene garden-scene">
+        <div class="scene-content">
+            <div class="garden-environment">
+                <svg viewBox="0 0 400 250" class="tree-svg tree-sway">
+                    <path d="M180 250 L190 100 L210 100 L220 250 Z" fill="#A07869"/>
+                    <circle cx="200" cy="90" r="80" fill="#D8A7B1" opacity="0.8"/>
+                    <circle cx="150" cy="120" r="60" fill="#FAD4D8" opacity="0.9"/>
+                    <circle cx="250" cy="110" r="70" fill="#FAD4D8" opacity="0.9"/>
+                </svg>
+                
+                <div class="characters-group">
+                    <!-- Both Bears -->
+                    <div class="bears-sitting">
+                        <svg viewBox="0 0 150 100" class="bear-couple">
+                            <ellipse cx="45" cy="50" rx="25" ry="22" fill="#FDF6F0" stroke="#A07869" stroke-width="1.5"/>
+                            <ellipse cx="95" cy="50" rx="25" ry="22" fill="#A07869" stroke="#6b4c41" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <!-- Clefable -->
+                    <div class="clefable-cameo hover-float">
+                        <svg viewBox="0 0 80 80">
+                            <path d="M40 70 C 10 70, 10 30, 40 30 C 70 30, 70 70, 40 70" fill="#ffb7c5"/>
+                            <path d="M20 35 L15 15 L30 25 Z" fill="#ffb7c5"/>
+                            <path d="M60 35 L65 15 L50 25 Z" fill="#ffb7c5"/>
+                            <path d="M40 30 C 30 20, 50 15, 45 25" fill="none" stroke="#ffb7c5" stroke-width="3"/>
+                            <circle cx="32" cy="45" r="2" fill="#333"/>
+                            <circle cx="48" cy="45" r="2" fill="#333"/>
+                        </svg>
+                    </div>
+                    <!-- Gengar peeking -->
+                    <div class="gengar-cameo peek-anim">
+                        <svg viewBox="0 0 80 80">
+                            <path d="M20 70 C 10 40, 30 20, 40 20 C 50 20, 70 40, 60 70 Z" fill="#6b4c9a"/>
+                            <path d="M25 25 L20 10 L35 20 Z" fill="#6b4c9a"/>
+                            <path d="M55 25 L60 10 L45 20 Z" fill="#6b4c9a"/>
+                            <ellipse cx="30" cy="40" rx="5" ry="4" fill="#e65a5a"/>
+                            <ellipse cx="50" cy="40" rx="5" ry="4" fill="#e65a5a"/>
+                            <path d="M25 55 Q 40 65 55 55" fill="none" stroke="#333" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-group">
+                <p class="fade-text">Because even when you couldn’t stay…</p>
+                <p class="fade-text">you were still trying to be there.</p>
+                <p class="fade-text">You reminded me that I wasn’t alone.</p>
+                <p class="fade-text">And I noticed.</p>
+                <p class="fade-text">I really did.</p>
+            </div>
+            
+            <div class="handwritten-note fade-text">
+                <p>Thank you for still reaching for me.</p>
+            </div>
+
+            <a href="#scene-4" class="continue-btn">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 4: THE THINGS I LOVE ABOUT DULCE -->
+    <section id="scene-4" class="scene flower-scene">
+        <div class="scene-content">
+            <p class="instruction-text fade-text">Tap the flowers...</p>
+            
+            <div class="interactive-flowers">
+                <button class="flower-btn" data-msg="your smile">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#FDF6F0"/><circle cx="25" cy="10" r="8" fill="#FAD4D8"/><circle cx="25" cy="40" r="8" fill="#FAD4D8"/><circle cx="10" cy="25" r="8" fill="#FAD4D8"/><circle cx="40" cy="25" r="8" fill="#FAD4D8"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+                <button class="flower-btn" data-msg="your eyes">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#F5E6CC"/><circle cx="15" cy="15" r="8" fill="#D8A7B1"/><circle cx="35" cy="35" r="8" fill="#D8A7B1"/><circle cx="15" cy="35" r="8" fill="#D8A7B1"/><circle cx="35" cy="15" r="8" fill="#D8A7B1"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+                <button class="flower-btn" data-msg="your voice">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#FDF6F0"/><circle cx="25" cy="10" r="8" fill="#E6DAF5"/><circle cx="25" cy="40" r="8" fill="#E6DAF5"/><circle cx="10" cy="25" r="8" fill="#E6DAF5"/><circle cx="40" cy="25" r="8" fill="#E6DAF5"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+                <button class="flower-btn" data-msg="your little expressions">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#FDF6F0"/><circle cx="15" cy="15" r="8" fill="#C2D4E3"/><circle cx="35" cy="35" r="8" fill="#C2D4E3"/><circle cx="15" cy="35" r="8" fill="#C2D4E3"/><circle cx="35" cy="15" r="8" fill="#C2D4E3"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+                <button class="flower-btn" data-msg="your laugh">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#FDF6F0"/><circle cx="25" cy="10" r="8" fill="#FAD4D8"/><circle cx="25" cy="40" r="8" fill="#FAD4D8"/><circle cx="10" cy="25" r="8" fill="#FAD4D8"/><circle cx="40" cy="25" r="8" fill="#FAD4D8"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+                <button class="flower-btn" data-msg="the way you care">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#F5E6CC"/><circle cx="15" cy="15" r="8" fill="#E6DAF5"/><circle cx="35" cy="35" r="8" fill="#E6DAF5"/><circle cx="15" cy="35" r="8" fill="#E6DAF5"/><circle cx="35" cy="15" r="8" fill="#E6DAF5"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+                <button class="flower-btn" data-msg="the way you make ordinary moments special">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#FDF6F0"/><circle cx="25" cy="10" r="8" fill="#D8A7B1"/><circle cx="25" cy="40" r="8" fill="#D8A7B1"/><circle cx="10" cy="25" r="8" fill="#D8A7B1"/><circle cx="40" cy="25" r="8" fill="#D8A7B1"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+                <button class="flower-btn" data-msg="the little things you probably don’t realise I notice">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#F5E6CC"/><circle cx="15" cy="15" r="8" fill="#C2D4E3"/><circle cx="35" cy="35" r="8" fill="#C2D4E3"/><circle cx="15" cy="35" r="8" fill="#C2D4E3"/><circle cx="35" cy="15" r="8" fill="#C2D4E3"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+                <button class="flower-btn" data-msg="just… you">
+                    <svg viewBox="0 0 50 50" class="flower-svg"><circle cx="25" cy="25" r="10" fill="#FDF6F0"/><circle cx="25" cy="10" r="8" fill="#FAD4D8"/><circle cx="25" cy="40" r="8" fill="#FAD4D8"/><circle cx="10" cy="25" r="8" fill="#FAD4D8"/><circle cx="40" cy="25" r="8" fill="#FAD4D8"/></svg>
+                    <span class="flower-note"></span>
+                </button>
+            </div>
+
+            <div class="text-group margin-top-l">
+                <p class="fade-text">I didn’t fall for one thing about you.</p>
+                <p class="fade-text">I fell for the whole person.</p>
+            </div>
+
+            <a href="#scene-5" class="continue-btn">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 5: A ROOM FULL OF YOU -->
+    <section id="scene-5" class="scene miniature-room-scene">
+        <div class="scene-content">
+            <p class="instruction-text fade-text">Explore the room...</p>
+            
+            <div class="room-container">
+                <!-- Music Player -->
+                <button class="room-item item-music" data-msg="Some songs just sound like you now.">
+                    <svg viewBox="0 0 60 40"><rect width="60" height="40" rx="5" fill="#D8A7B1"/><circle cx="20" cy="20" r="12" fill="#333"/><circle cx="20" cy="20" r="4" fill="#FAD4D8"/></svg>
+                    <span class="room-note"></span>
+                </button>
+                
+                <!-- Mirror -->
+                <button class="room-item item-mirror" data-msg="You have absolutely no idea how pretty you are.">
+                    <svg viewBox="0 0 50 80"><ellipse cx="25" cy="35" rx="20" ry="30" fill="#C2D4E3" stroke="#F5E6CC" stroke-width="4"/><rect x="20" y="65" width="10" height="15" fill="#F5E6CC"/></svg>
+                    <span class="room-note"></span>
+                </button>
+                
+                <!-- Notebook -->
+                <button class="room-item item-notebook" data-msg="I keep collecting little things about you in my head.">
+                    <svg viewBox="0 0 40 50"><rect width="40" height="50" rx="3" fill="#A07869"/><rect x="5" y="0" width="30" height="50" fill="#FDF6F0"/><line x1="10" y1="10" x2="30" y2="10" stroke="#C2D4E3" stroke-width="2"/></svg>
+                    <span class="room-note"></span>
+                </button>
+                
+                <!-- Tiny Box -->
+                <button class="room-item item-box" data-msg="Things I never want to forget.">
+                    <svg viewBox="0 0 40 35"><path d="M20 5 C 20 5, 10 -5, 0 10 C -10 25, 20 35, 20 35 C 20 35, 50 25, 40 10 C 30 -5, 20 5, 20 5 Z" fill="#FAD4D8"/></svg>
+                    <span class="room-note"></span>
+                </button>
+                
+                <!-- Lamp -->
+                <button class="room-item item-lamp" data-msg="You make ordinary days feel warmer.">
+                    <svg viewBox="0 0 40 70"><path d="M10 30 L20 0 L30 30 Z" fill="#F5E6CC"/><rect x="18" y="30" width="4" height="35" fill="#A07869"/><rect x="10" y="65" width="20" height="5" fill="#A07869"/></svg>
+                    <span class="room-note"></span>
+                </button>
+            </div>
+
+            <a href="#scene-6" class="continue-btn margin-top-l">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 6: WHAT I’M LEARNING -->
+    <section id="scene-6" class="scene sunset-scene">
+        <div class="scene-content">
+            <div class="sunset-environment">
+                <div class="sun"></div>
+                <svg viewBox="0 0 400 200" class="ground-silhouette">
+                    <path d="M0 200 Q 200 150 400 200 Z" fill="#8c6b5d"/>
+                </svg>
+                <div class="bears-sitting sunset-bears">
+                    <svg viewBox="0 0 150 100" class="bear-couple silhouette">
+                        <ellipse cx="60" cy="50" rx="22" ry="20" fill="#4a362e"/>
+                        <ellipse cx="90" cy="50" rx="22" ry="20" fill="#4a362e"/>
+                    </svg>
+                </div>
+                <div class="falling-leaf leaf-1"></div>
+                <div class="falling-leaf leaf-2"></div>
+            </div>
+
+            <div class="text-group">
+                <p class="fade-text">I’m learning something too.</p>
+                <p class="fade-text">Loving someone doesn’t mean<br>expecting them to fix every bad day.</p>
+                <p class="fade-text">Sometimes I need to breathe,<br>calm myself down,<br>and carry myself for a while.</p>
+                <p class="fade-text">And when I really need you,<br>I’ll tell you.</p>
+                <p class="fade-text">I don’t want to make you guess.</p>
+                <p class="fade-text emphasize mature-text">I want to love you better,<br>not just love you harder.</p>
+            </div>
+
+            <a href="#scene-7" class="continue-btn">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 7: WHY I CHOOSE YOU -->
+    <section id="scene-7" class="scene sky-scene">
+        <div class="scene-content">
+            <div class="floating-bears-container">
+                <svg viewBox="0 0 200 150" class="cloud-bears hover-float">
+                    <path d="M50 120 Q 30 120 30 100 Q 30 80 50 80 Q 60 50 100 50 Q 140 50 150 80 Q 170 80 170 100 Q 170 120 150 120 Z" fill="#FDF6F0" opacity="0.9"/>
+                    <ellipse cx="80" cy="70" rx="18" ry="16" fill="#A07869"/>
+                    <ellipse cx="120" cy="70" rx="18" ry="16" fill="#FDF6F0" stroke="#A07869" stroke-width="1"/>
+                </svg>
+                
+                <div class="floating-words">
+                    <span class="float-word fw-1">your kindness</span>
+                    <span class="float-word fw-2">your weird little habits</span>
+                    <span class="float-word fw-3">your laugh</span>
+                    <span class="float-word fw-4">your patience</span>
+                    <span class="float-word fw-5">your personality</span>
+                    <span class="float-word fw-6">your warmth</span>
+                    <span class="float-word fw-7">your honesty</span>
+                    <span class="float-word fw-8">your heart</span>
+                </div>
+            </div>
+
+            <div class="text-group margin-top-xl">
+                <p class="fade-text">There are so many reasons.</p>
+                <p class="fade-text">But honestly…</p>
+                <p class="fade-text handwritten-note">You became home to me in ways I never expected.</p>
+            </div>
+
+            <a href="#scene-8" class="continue-btn">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 8: GO SHINE, DULCE -->
+    <section id="scene-8" class="scene campus-scene">
+        <div class="scene-content">
+            <div class="text-group playful-text">
+                <p class="fade-text">Okay.</p>
+                <p class="fade-text">Enough about my emotional ass.</p>
+                <p class="fade-text">You have things to do.</p>
+            </div>
+
+            <div class="encouragement-list">
+                <p class="fade-text badge">Breathe.</p>
+                <p class="fade-text badge">Speak slowly.</p>
+                <p class="fade-text badge">Trust yourself.</p>
+                <p class="fade-text badge">You know more than you think.</p>
+                <p class="fade-text badge">Don’t rush.</p>
+                <p class="fade-text badge">You don't need to be perfect.</p>
+                <p class="fade-text badge">You just need to be you.</p>
+            </div>
+
+            <div class="text-group margin-top-l">
+                <p class="fade-text emphasize">I’m proud of you already.</p>
+                <p class="fade-text">Now go show them your beautiful brain.</p>
+            </div>
+
+            <div class="campus-cameos margin-top-l">
+                <div class="clefable-cameo bounce-anim">
+                    <svg viewBox="0 0 60 60">
+                        <path d="M30 50 C 10 50, 10 20, 30 20 C 50 20, 50 50, 30 50" fill="#ffb7c5"/>
+                        <!-- tiny flower -->
+                        <circle cx="45" cy="35" r="5" fill="#FAD4D8"/>
+                    </svg>
+                </div>
+                <div class="gengar-cameo peek-anim">
+                    <svg viewBox="0 0 60 60">
+                        <path d="M15 50 C 10 30, 20 15, 30 15 C 40 15, 50 30, 45 50 Z" fill="#6b4c9a"/>
+                        <ellipse cx="25" cy="30" rx="3" ry="2" fill="#e65a5a"/>
+                        <ellipse cx="35" cy="30" rx="3" ry="2" fill="#e65a5a"/>
+                    </svg>
+                </div>
+            </div>
+
+            <a href="#scene-9" class="continue-btn margin-top-l">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 9: HUBBY’S TINY CARE LIST -->
+    <section id="scene-9" class="scene care-list-scene">
+        <div class="scene-content">
+            <div class="path-environment">
+                <div class="bear-waving waving-anim">
+                    <svg viewBox="0 0 100 100">
+                        <ellipse cx="50" cy="50" rx="30" ry="25" fill="#A07869"/>
+                        <circle cx="35" cy="35" r="10" fill="#A07869"/>
+                        <circle cx="65" cy="35" r="10" fill="#A07869"/>
+                        <!-- Waving arm -->
+                        <path d="M75 50 Q 95 30 85 20" fill="none" stroke="#A07869" stroke-width="12" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="text-group">
+                <p class="fade-text">Before you go…</p>
+            </div>
+
+            <div class="care-icons">
+                <div class="care-item fade-text">
+                    <svg viewBox="0 0 40 40"><rect x="10" y="15" width="20" height="20" rx="3" fill="#D8A7B1"/><path d="M15 15 C 15 5, 25 5, 25 15" fill="none" stroke="#A07869" stroke-width="3"/></svg>
+                    <span>Take everything you need.</span>
+                </div>
+                <div class="care-item fade-text">
+                    <svg viewBox="0 0 40 40"><path d="M15 10 L25 10 L25 35 L15 35 Z" fill="#C2D4E3" rx="2"/></svg>
+                    <span>Eat something when you can.</span>
+                </div>
+                <div class="care-item fade-text">
+                    <svg viewBox="0 0 40 40"><rect x="12" y="5" width="16" height="30" rx="4" fill="#333"/><rect x="14" y="7" width="12" height="26" fill="#FDF6F0"/></svg>
+                    <span>Keep your things safe.</span>
+                </div>
+                <div class="care-item fade-text">
+                    <svg viewBox="0 0 40 40"><path d="M20 5 L30 15 L20 25 L10 15 Z" fill="#F5E6CC"/></svg>
+                    <span>Take care on the way.</span>
+                </div>
+                <div class="care-item fade-text">
+                    <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="12" fill="none" stroke="#A07869" stroke-width="3"/><polyline points="20 12 20 20 25 25" fill="none" stroke="#A07869" stroke-width="2"/></svg>
+                    <span>Don’t rush.</span>
+                </div>
+                <div class="care-item fade-text">
+                    <svg viewBox="0 0 40 40"><rect x="10" y="15" width="20" height="15" fill="#FDF6F0" stroke="#A07869" stroke-width="2"/><path d="M10 15 L20 22 L30 15" fill="none" stroke="#A07869" stroke-width="2"/></svg>
+                    <span>Text me when you reach.</span>
+                </div>
+            </div>
+
+            <p class="fade-text handwritten-note margin-top-l">Hubby’s tiny instructions.</p>
+
+            <a href="#scene-10" class="continue-btn margin-top-l">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 10: COME BACK TO ME -->
+    <section id="scene-10" class="scene night-house-scene">
+        <div class="scene-content">
+            <div class="house-distance">
+                <svg viewBox="0 0 100 100" class="tiny-house-svg">
+                    <path d="M10 50 L50 20 L90 50" fill="none" stroke="#4a362e" stroke-width="4"/>
+                    <rect x="20" y="50" width="60" height="40" fill="#2d221e"/>
+                    <rect x="40" y="60" width="20" height="20" fill="#F5E6CC" class="warm-glow"/>
+                </svg>
+            </div>
+            
+            <div class="bears-reunite margin-top-l">
+                <svg viewBox="0 0 150 100" class="hug-anim">
+                    <!-- They overlap to look like a hug -->
+                    <ellipse cx="70" cy="50" rx="20" ry="25" fill="#FDF6F0" stroke="#A07869" stroke-width="1"/>
+                    <ellipse cx="80" cy="50" rx="20" ry="25" fill="#A07869" stroke="#6b4c41" stroke-width="1"/>
+                </svg>
+            </div>
+
+            <div class="text-group">
+                <p class="fade-text">Whatever today turns into…</p>
+                <p class="fade-text">You can always come back here.</p>
+                <p class="fade-text">Tell me everything.</p>
+                <ul class="subtle-list">
+                    <li class="fade-text">The good parts.</li>
+                    <li class="fade-text">The awkward parts.</li>
+                    <li class="fade-text">The things that made you laugh.</li>
+                    <li class="fade-text">The things that annoyed you.</li>
+                    <li class="fade-text">The things you’re proud of.</li>
+                    <li class="fade-text">And the things you wish went differently.</li>
+                </ul>
+                <p class="fade-text emphasize margin-top-m">I’ll listen.</p>
+            </div>
+
+            <a href="#scene-11" class="continue-btn">CONTINUE &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SCENE 11: THE FINAL LETTER -->
+    <section id="scene-11" class="scene final-scene">
+        <div class="scene-content">
+            <div class="night-sky-final">
+                <div class="large-moon"></div>
+                <div class="star-static pos-1"></div>
+                <div class="star-static pos-2"></div>
+                <div class="star-static pos-3"></div>
+                <div class="star-static pos-4"></div>
+            </div>
+
+            <div class="companions-final">
+                <div class="bears-sitting">
+                    <svg viewBox="0 0 150 100" class="bear-couple">
+                        <ellipse cx="60" cy="50" rx="22" ry="20" fill="#FDF6F0" stroke="#A07869" stroke-width="1"/>
+                        <ellipse cx="90" cy="50" rx="22" ry="20" fill="#A07869" stroke="#6b4c41" stroke-width="1"/>
+                    </svg>
+                </div>
+                <!-- Clefable & Gengar sitting nearby -->
+                <div class="mini-clefable"><svg viewBox="0 0 40 40"><path d="M20 35 C 5 35, 5 15, 20 15 C 35 15, 35 35, 20 35" fill="#ffb7c5"/></svg></div>
+                <div class="mini-gengar"><svg viewBox="0 0 40 40"><path d="M10 35 C 5 20, 15 10, 20 10 C 25 10, 35 20, 30 35 Z" fill="#6b4c9a"/></svg></div>
+            </div>
+
+            <!-- Envelope Interaction -->
+            <div class="envelope-container" id="final-envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <svg viewBox="0 0 200 120">
+                        <rect width="200" height="120" fill="#D8A7B1" rx="5"/>
+                        <path d="M0 0 L100 60 L200 0" fill="none" stroke="#FDF6F0" stroke-width="4" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="wax-seal">♥</div>
+            </div>
+
+            <div class="final-letter-content" id="final-letter-text">
+                <p class="fade-text handwritten-note">Dulce…</p>
+                <p class="fade-text">I don’t want to love you perfectly.</p>
+                <p class="fade-text">I want to love you honestly.</p>
+                <p class="fade-text">I want to understand you.</p>
+                <p class="fade-text">I want to respect you.</p>
+                <p class="fade-text">I want to keep learning you.</p>
+                
+                <p class="fade-text margin-top-m">And when I get something wrong…</p>
+                <p class="fade-text">I want to learn from it,<br>instead of making you carry it.</p>
+                
+                <p class="fade-text margin-top-m">You mean so much to me.</p>
+                <p class="fade-text">I love the person you are.</p>
+                <p class="fade-text">I love the little things.</p>
+                <p class="fade-text">I love the way you make my days feel different.</p>
+                <p class="fade-text">I love having you in my life.</p>
+                
+                <p class="fade-text margin-top-m">And even on the days when I don’t handle things perfectly…</p>
+                <p class="fade-text emphasize">I never want you to doubt how deeply I love you.</p>
+                
+                <p class="fade-text margin-top-m">Thank you for being my girl.</p>
+                <p class="fade-text">Thank you for being you.</p>
+                
+                <p class="fade-text margin-top-m">Now go shine, Dulce.</p>
+                <p class="fade-text">I’ll be here.</p>
+                
+                <p class="fade-text signature">— Your hubby</p>
+                
+                <div class="final-ending">
+                    <p class="fade-text ending-pause">A little place for you.</p>
+                    <p class="fade-text ending-pause">Made with a lot of love.</p>
+                    <p class="fade-text ending-pause">For Dulce.</p>
+                    <p class="fade-text ending-pause">Always.</p>
+                </div>
+            </div>
+            
+            <!-- Fallback button in case they don't click envelope -->
+            <button class="open-letter-btn primary-btn" id="open-letter-btn">OPEN LETTER</button>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
